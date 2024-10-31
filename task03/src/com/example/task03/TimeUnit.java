@@ -28,4 +28,7 @@ public interface TimeUnit {
      */
     long toMinutes();
 
+    long toHours();
+
+    String toString();
 }
