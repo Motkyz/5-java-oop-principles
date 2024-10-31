@@ -13,7 +13,11 @@ public class DiscountBill extends Bill {
         return Discount;
     }
 
-    public double getAbsDiscount() {
-        return super.getPrice() * (Discount / 100.0);
+    public long getAbsDiscount() {
+        return super.getPrice() * (Discount / 100);
+    }
+
+    public long getPrice() {
+        return super.getPrice() - super.getPrice() * (Discount / 100);
     }
 }
